@@ -12,6 +12,10 @@ class TimeCell: UICollectionViewCell {
     // MARK: Outlets
     @IBOutlet weak var timeTxt: UILabel!
     
+    // MARK: Variables
+    static let id = "TimeCell"
+    static let nib = UINib(nibName: id, bundle: nil)
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

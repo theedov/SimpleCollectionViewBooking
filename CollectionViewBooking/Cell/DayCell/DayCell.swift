@@ -12,6 +12,10 @@ class DayCell: UICollectionViewCell {
     @IBOutlet weak var dayTxt: UILabel!
     @IBOutlet weak var monthYearTxt: UILabel!
     
+    // MARK: Variables
+    static let id = "DayCell"
+    static let nib = UINib(nibName: id, bundle: nil)
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

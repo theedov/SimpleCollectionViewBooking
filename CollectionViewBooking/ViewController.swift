@@ -32,9 +32,9 @@ class ViewController: UIViewController {
         collectionView.collectionViewLayout = createCompositionalLayout()
         collectionView.allowsMultipleSelection = true
         
-        collectionView.register(UINib(nibName: "DayCell", bundle: nil), forCellWithReuseIdentifier: "DayCell")
-        collectionView.register(UINib(nibName: "TimeCell", bundle: nil), forCellWithReuseIdentifier: "TimeCell")
-        collectionView.register(UINib(nibName: "SectionHeader", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SectionHeader")
+        collectionView.register(DayCell.nib, forCellWithReuseIdentifier: DayCell.id)
+        collectionView.register(TimeCell.nib, forCellWithReuseIdentifier: TimeCell.id)
+        collectionView.register(SectionHeader.nib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SectionHeader.id)
         
     }
     
@@ -154,11 +154,11 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch indexPath.section {
         case 0:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DayCell", for: indexPath) as! DayCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DayCell.id, for: indexPath) as! DayCell
             cell.configure(appointmentDay: appointmentDays[indexPath.row])
             return cell
         case 1:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TimeCell", for: indexPath) as! TimeCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TimeCell.id, for: indexPath) as! TimeCell
             cell.configure(appointmentTime: appointmentTimes[indexPath.row])
             return cell
         default: return UICollectionViewCell()
@@ -198,7 +198,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
-            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeader", for: indexPath) as! SectionHeader
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SectionHeader.id, for: indexPath) as! SectionHeader
             switch indexPath.section {
             case 0:
                 header.configure(title: "Date")
