@@ -46,3 +46,13 @@ A simple booking feature using CollectionView and Compositional Layout. Availabl
    }
 ]
 ```
+
+# What I Learned
+
+* Got familiar with the Compositional Layout
+
+## Contact Info:
+- Email: bogdan@dovgopol.dev
+- Web: [dovgopol.dev](https://dovgopol.dev)
+
+# Thanks for stopping by!
