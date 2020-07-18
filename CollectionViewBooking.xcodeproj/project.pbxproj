@@ -13,6 +13,16 @@
 		438B4A1224BEA4B50057BF96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438B4A1024BEA4B50057BF96 /* Main.storyboard */; };
 		438B4A1424BEA4B80057BF96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438B4A1324BEA4B80057BF96 /* Assets.xcassets */; };
 		438B4A1724BEA4B80057BF96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438B4A1524BEA4B80057BF96 /* LaunchScreen.storyboard */; };
+		438B4A1F24BEC0550057BF96 /* RESTFul.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438B4A1E24BEC0550057BF96 /* RESTFul.swift */; };
+		438B4A2624BEC07D0057BF96 /* AppointmentDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438B4A2324BEC07D0057BF96 /* AppointmentDay.swift */; };
+		438B4A2724BEC07D0057BF96 /* AppointmentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438B4A2424BEC07D0057BF96 /* AppointmentTime.swift */; };
+		438B4A2824BEC07D0057BF96 /* AppointmentDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438B4A2524BEC07D0057BF96 /* AppointmentDate.swift */; };
+		438B4A2C24BECDF70057BF96 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438B4A2A24BECDF70057BF96 /* DayCell.swift */; };
+		438B4A2D24BECDF70057BF96 /* DayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438B4A2B24BECDF70057BF96 /* DayCell.xib */; };
+		438B4A3024BECE0A0057BF96 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438B4A2E24BECE0A0057BF96 /* TimeCell.swift */; };
+		438B4A3124BECE0A0057BF96 /* TimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438B4A2F24BECE0A0057BF96 /* TimeCell.xib */; };
+		438B4A4224BED9410057BF96 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438B4A4024BED9410057BF96 /* SectionHeader.swift */; };
+		438B4A4324BED9410057BF96 /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438B4A4124BED9410057BF96 /* SectionHeader.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		438B4A1324BEA4B80057BF96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		438B4A1624BEA4B80057BF96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		438B4A1824BEA4B80057BF96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		438B4A1E24BEC0550057BF96 /* RESTFul.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTFul.swift; sourceTree = "<group>"; };
+		438B4A2324BEC07D0057BF96 /* AppointmentDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentDay.swift; sourceTree = "<group>"; };
+		438B4A2424BEC07D0057BF96 /* AppointmentTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentTime.swift; sourceTree = "<group>"; };
+		438B4A2524BEC07D0057BF96 /* AppointmentDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentDate.swift; sourceTree = "<group>"; };
+		438B4A2A24BECDF70057BF96 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
+		438B4A2B24BECDF70057BF96 /* DayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCell.xib; sourceTree = "<group>"; };
+		438B4A2E24BECE0A0057BF96 /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		438B4A2F24BECE0A0057BF96 /* TimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeCell.xib; sourceTree = "<group>"; };
+		438B4A4024BED9410057BF96 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		438B4A4124BED9410057BF96 /* SectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,9 @@
 		438B4A0924BEA4B50057BF96 /* CollectionViewBooking */ = {
 			isa = PBXGroup;
 			children = (
+				438B4A2924BECDD40057BF96 /* Cell */,
+				438B4A2224BEC0700057BF96 /* Model */,
+				438B4A2024BEC05C0057BF96 /* Utils */,
 				438B4A0A24BEA4B50057BF96 /* AppDelegate.swift */,
 				438B4A0C24BEA4B50057BF96 /* SceneDelegate.swift */,
 				438B4A0E24BEA4B50057BF96 /* ViewController.swift */,
@@ -65,6 +88,77 @@
 				438B4A1824BEA4B80057BF96 /* Info.plist */,
 			);
 			path = CollectionViewBooking;
+			sourceTree = "<group>";
+		};
+		438B4A2024BEC05C0057BF96 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				438B4A2124BEC0620057BF96 /* Networking */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		438B4A2124BEC0620057BF96 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				438B4A1E24BEC0550057BF96 /* RESTFul.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		438B4A2224BEC0700057BF96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				438B4A2524BEC07D0057BF96 /* AppointmentDate.swift */,
+				438B4A2324BEC07D0057BF96 /* AppointmentDay.swift */,
+				438B4A2424BEC07D0057BF96 /* AppointmentTime.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		438B4A2924BECDD40057BF96 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				438B4A3E24BED9030057BF96 /* Sections */,
+				438B4A3224BED5600057BF96 /* DayCell */,
+				438B4A3324BED5660057BF96 /* TimeCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		438B4A3224BED5600057BF96 /* DayCell */ = {
+			isa = PBXGroup;
+			children = (
+				438B4A2A24BECDF70057BF96 /* DayCell.swift */,
+				438B4A2B24BECDF70057BF96 /* DayCell.xib */,
+			);
+			path = DayCell;
+			sourceTree = "<group>";
+		};
+		438B4A3324BED5660057BF96 /* TimeCell */ = {
+			isa = PBXGroup;
+			children = (
+				438B4A2E24BECE0A0057BF96 /* TimeCell.swift */,
+				438B4A2F24BECE0A0057BF96 /* TimeCell.xib */,
+			);
+			path = TimeCell;
+			sourceTree = "<group>";
+		};
+		438B4A3E24BED9030057BF96 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				438B4A3F24BED9090057BF96 /* Header */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		438B4A3F24BED9090057BF96 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				438B4A4024BED9410057BF96 /* SectionHeader.swift */,
+				438B4A4124BED9410057BF96 /* SectionHeader.xib */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +220,10 @@
 			files = (
 				438B4A1724BEA4B80057BF96 /* LaunchScreen.storyboard in Resources */,
 				438B4A1424BEA4B80057BF96 /* Assets.xcassets in Resources */,
+				438B4A2D24BECDF70057BF96 /* DayCell.xib in Resources */,
 				438B4A1224BEA4B50057BF96 /* Main.storyboard in Resources */,
+				438B4A3124BECE0A0057BF96 /* TimeCell.xib in Resources */,
+				438B4A4324BED9410057BF96 /* SectionHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +234,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438B4A2624BEC07D0057BF96 /* AppointmentDay.swift in Sources */,
 				438B4A0F24BEA4B50057BF96 /* ViewController.swift in Sources */,
+				438B4A2724BEC07D0057BF96 /* AppointmentTime.swift in Sources */,
+				438B4A3024BECE0A0057BF96 /* TimeCell.swift in Sources */,
+				438B4A1F24BEC0550057BF96 /* RESTFul.swift in Sources */,
 				438B4A0B24BEA4B50057BF96 /* AppDelegate.swift in Sources */,
 				438B4A0D24BEA4B50057BF96 /* SceneDelegate.swift in Sources */,
+				438B4A4224BED9410057BF96 /* SectionHeader.swift in Sources */,
+				438B4A2C24BECDF70057BF96 /* DayCell.swift in Sources */,
+				438B4A2824BEC07D0057BF96 /* AppointmentDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

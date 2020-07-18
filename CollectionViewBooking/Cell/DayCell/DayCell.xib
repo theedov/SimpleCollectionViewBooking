@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DayCell" id="gTV-IL-0wX" customClass="DayCell" customModule="CollectionViewBooking" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfD-8h-nYN">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="100"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TvR-iC-znd">
+                                <rect key="frame" x="11" y="22" width="38.5" height="56.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8o4-Fo-Dn2">
+                                        <rect key="frame" x="0.0" y="0.0" width="38.5" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01/20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FX-XD-LEr">
+                                        <rect key="frame" x="0.0" y="38.5" width="38.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TvR-iC-znd" firstAttribute="centerY" secondItem="hfD-8h-nYN" secondAttribute="centerY" id="JgE-3U-lwb"/>
+                            <constraint firstItem="TvR-iC-znd" firstAttribute="centerX" secondItem="hfD-8h-nYN" secondAttribute="centerX" id="unM-JQ-EKu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hfD-8h-nYN" secondAttribute="trailing" id="1sT-52-4B8"/>
+                <constraint firstItem="hfD-8h-nYN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BDu-Ms-Jbb"/>
+                <constraint firstAttribute="bottom" secondItem="hfD-8h-nYN" secondAttribute="bottom" id="Xy6-72-egM"/>
+                <constraint firstItem="hfD-8h-nYN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jeK-Zc-Q6O"/>
+            </constraints>
+            <size key="customSize" width="80" height="145"/>
+            <connections>
+                <outlet property="dayTxt" destination="8o4-Fo-Dn2" id="YhX-j6-xTJ"/>
+                <outlet property="monthYearTxt" destination="2FX-XD-LEr" id="q6I-qF-219"/>
+            </connections>
+            <point key="canvasLocation" x="159.42028985507247" y="150"/>
+        </collectionViewCell>
+    </objects>
+</document>
